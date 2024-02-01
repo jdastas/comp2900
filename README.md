@@ -1,5 +1,5 @@
 # comp2900
-Curso de __Estructura de Datos__ \
+Curso de __Estructura de Datos__ 
 
-## _Autor John Doe_
+Autor: _John Doe_
 
