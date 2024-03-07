@@ -16,6 +16,6 @@ average = Average(lst)
 print(lst)
 print(f'El promedio de la lista es {average}')
 
-# Versioin del Curso
+# Version del Curso
 print(lst)
 print(f'El valor promedio de la lista es {promedio(lst)}')
