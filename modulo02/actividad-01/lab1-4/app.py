@@ -4,11 +4,11 @@ def Average(lst):
  
 def promedio(lista_numeros):
     suma = 0  
-    ctr = 0  
+    array_length = 0  
     for valor in lista_numeros:
         suma = suma + valor #   suma += valor
-        ctr = ctr + 1       #   ctr++
-    return (suma / ctr)
+        array_length = array_length + 1       #   ctr++
+    return (suma / array_length)
 
 # Version ChatGPT
 lst = [15, 9, 55, 41, 35, 20, 62, 49] 
