@@ -1,5 +1,3 @@
-import array
-
 def invertir_cadena(cadena):
     array_length = len(cadena)
     nueva_cadena = ''
