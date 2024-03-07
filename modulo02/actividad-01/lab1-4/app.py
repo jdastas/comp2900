@@ -8,7 +8,7 @@ def promedio(lista_numeros):
     for valor in lista_numeros:
         suma = suma + valor #   suma += valor
         ctr = ctr + 1       #   ctr++
-    return (suma / len(lista_numeros))
+    return (suma / ctr)
 
 # Version ChatGPT
 lst = [15, 9, 55, 41, 35, 20, 62, 49] 
