@@ -12,13 +12,15 @@ def bubble_sort(arr):
             break
     return arr
 
-lista = []
-f = open("peor_caso.dat", "r")
-for n in f:
-  lista.append(n)
-f.close()
+for corridas in range(90000, 0, -10000):
+    print(f'Cantidad de datos a organizar {corridas}')
+    lista = []
+    f = open("peor_caso.dat", "r")
+    for n in f:
+        lista.append(n)
+    f.close()
 
-del lista[90000:] # 10000 elements (debe borrar 90000 elementos)
+    del lista[corridas:] # 10000 elements (debe borrar 90000 elementos)
 
-tiempo = timeit(bubble_sort(lista))
-print(f'{tiempo} segs')
+    tiempo = timeit(bubble_sort(lista))
+    print(f'Tiempo: {tiempo} segs')
