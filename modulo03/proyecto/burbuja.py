@@ -13,7 +13,7 @@ def bubble_sort(arr):
     return arr
 
 for corridas in range(90000, 0, -10000):
-    print(f'Cantidad de datos a organizar {corridas}')
+    print(f'Organizando {corridas} datos ... Favor esperar')
     lista = []
     f = open("peor_caso.dat", "r")
     for n in f:
