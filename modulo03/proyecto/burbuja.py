@@ -1,4 +1,4 @@
-import timeit
+from timeit import timeit
 
 def bubble_sort(arr):
     n = len(arr)
@@ -12,8 +12,7 @@ def bubble_sort(arr):
             break
     return arr
 
-for corridas in range(90000, 0, -10000):
-    print(f'Organizando {corridas} datos ... Favor esperar')
+for corridas in range(10000, 110000, 10000):
     lista = []
     f = open("peor_caso.dat", "r")
     for n in f:
@@ -22,5 +21,7 @@ for corridas in range(90000, 0, -10000):
 
     del lista[corridas:] # 10000 elements (debe borrar 90000 elementos)
 
-    tiempo = timeit(bubble_sort(lista))
-    print(f'Tiempo: {tiempo} segs')
+    print(f'Array: {len(lista)} elementos')
+    print(f'  Organizando {corridas} datos ... Favor esperar ...')
+    tiempo = timeit(lambda:bubble_sort(lista),number=1)
+    print(f'  Tiempo: {tiempo} segs')
